@@ -96,13 +96,6 @@ print("--------------------------------------\n")
 #x_test=tf.keras.utils.normalize(x_test,axis=1)
 
 print("--------------------------------------\n")
-'''data_augmentation = tf.keras.Sequential(
-   [
-     tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal",input_shape=(128,128,3)),
-     tf.keras.layers.experimental.preprocessing.RandomRotation(0.2),
-     tf.keras.layers.experimental.preprocessing.RandomZoom(0.2),
-   ]
- )'''
 
 model=tf.keras.models.Sequential([
     tf.keras.layers.Conv2D(32,(3,3),activation='relu',input_shape=(128,128,3)),
